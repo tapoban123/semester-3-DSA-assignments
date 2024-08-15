@@ -24,7 +24,7 @@ void displayArray(int A[], int n)
     }
 }
 
-int * insertElement(int A[], int n, int pos, int element)
+int *insertElement(int A[], int n, int pos, int element)
 {
     int *newArr;
     newArr = (int *)malloc((n + 1) * sizeof(int));
@@ -50,14 +50,21 @@ int * insertElement(int A[], int n, int pos, int element)
 
 int main()
 {
-    int n = 10;
+    int n = 10, insertionIndex, newElement;
     int arr[n];
     int *newArr;
 
     createArray(arr, n);
+    printf("The given array: ");
     displayArray(arr, n);
 
-    newArr = insertElement(arr, n, 4, 200);
+    printf("\nEnter index to insert element: ");
+    scanf("%d", &insertionIndex);
+
+    printf("Enter new element: ");
+    scanf("%d", &newElement);
+
+    newArr = insertElement(arr, n, insertionIndex, newElement);
 
     printf("\nThe new array: ");
     displayArray(newArr, n + 1);
