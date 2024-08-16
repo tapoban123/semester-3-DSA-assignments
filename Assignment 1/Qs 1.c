@@ -1,3 +1,5 @@
+/// Write a C program to insert an element in a specific position of an unordered array. 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

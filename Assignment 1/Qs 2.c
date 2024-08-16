@@ -1,3 +1,5 @@
+/// Write a C program to insert an element into an ordered array. After the insertion operation, the array should be ordered. 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
